@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-use WPcomSpecialProjects\Scaffold\Plugin;
+use DisableImageSrcset\Plugin;
 
 // region
 
@@ -14,7 +14,7 @@ use WPcomSpecialProjects\Scaffold\Plugin;
  *
  * @return  Plugin
  */
-function wpcomsp_scaffold_get_plugin_instance(): Plugin {
+function disable_image_srcset_get_plugin_instance(): Plugin {
 	return Plugin::get_instance();
 }
 
@@ -26,15 +26,8 @@ function wpcomsp_scaffold_get_plugin_instance(): Plugin {
  *
  * @return  string
  */
-function wpcomsp_scaffold_get_plugin_slug(): string {
-	return sanitize_key( WPCOMSP_SCAFFOLD_METADATA['TextDomain'] );
+function disable_image_srcset_get_plugin_slug(): string {
+	return sanitize_key( DISABLE_IMAGE_SRCSET_METADATA['TextDomain'] );
 }
-
-// endregion
-
-//region OTHERS
-
-require WPCOMSP_SCAFFOLD_PATH . 'includes/assets.php';
-require WPCOMSP_SCAFFOLD_PATH . 'includes/settings.php';
 
 // endregion
