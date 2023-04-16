@@ -8,9 +8,15 @@ The srcset attribute is a way to provide multiple image sizes for a single image
 
 ## That sounds great, why would I want to disable it?
 
-The srcset attribute can be useful, but it can also cause problems with some themes and plugins. For example, some themes and plugins may not be able to handle the srcset attribute, and may not display the image correctly.
+The srcset attribute can be useful, but there are times when you may want to disable it for a specific image.
 
-There are many reasons why you may want to disable the srcset attribute for a specific image. This plugin gives you the ability to do that.
+Some examples:
+
+* You want to always show the highest quality image, regardless of the screen size.
+* There is a conflict with another plugin or theme.
+* You want to use a different plugin to handle responsive images.
+
+No matter what reason you have for wanting to disable the srcset attribute, this plugin gives you the ability to do that.
 
 ## How do I use this plugin?
 
